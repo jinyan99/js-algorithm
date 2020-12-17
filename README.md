@@ -1,2 +1,3 @@
 # js-algorithm
-Used to learn data structures and algorithms
+
+JavaScript 数据结构与算法
