@@ -1,7 +1,7 @@
 Array.prototype.mergeSort = function() {
   const rec = (arr) => {
     //先把数组分成左右2半
-    if (arr.length === 1) return;
+    if (arr.length === 1) return arr;
     const mid = Math.floor(arr.length / 2);
     const left = arr.slice(0, mid);
     const right = arr.slice(mid, arr.length);
@@ -22,6 +22,7 @@ Array.prototype.mergeSort = function() {
     return res;
   };
   const res = rec(this);
+  // 改变this里的值说明是改变原数组的，要想不改变原数组的return res即可
   res.forEach((n,i) => {this[i] = n;});
 }
 

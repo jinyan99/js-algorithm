@@ -1,5 +1,5 @@
 Array.prototype.quickSort = function () {
-  const rec = () => {
+  const rec = (arr) => {
     if (arr.length === 1) return arr;
     // 分别用来存放基准前后的数组
     const left = [];
